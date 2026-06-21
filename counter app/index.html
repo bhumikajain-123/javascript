@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Counter App</title>
+</head>
+<body>
+
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    
+    <div class="card text-center p-4 shadow" style="width: 20rem;">
+        
+        <h2>Counter App</h2>
+
+        <input
+  type="text"
+  value="0"
+  class="form-control text-center fs-1 fw-bold mb-3"
+  readonly
+  id = "count">
+
+        <button class="btn btn-success mb-2" onclick="increase()" id="increment">
+            Increase
+        </button>
+
+        <button class="btn btn-danger mb-2" onclick="decrease()"    id="decrement">
+            Decrease
+        </button>
+
+        <button class="btn btn-secondary" onclick="reset()" id="reset">
+            Reset
+        </button>
+
+    </div>
+
+</div>
+<script src = "script.js"></script>
+</body>
+</html>
